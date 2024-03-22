@@ -6,4 +6,3 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [];
-// testing git commit
