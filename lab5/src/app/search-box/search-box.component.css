@@ -1,0 +1,66 @@
+.sch{
+    width: 960px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.shop{
+    width: 100px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    color: #0089d0;
+    border: 1px solid #e5e5e5;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    background: #f5f5f5;
+}
+#in{
+    margin-left: 0!important;
+    margin-right: 0!important;
+    height: 33px!important;
+    width: 468px!important;
+    background: #fbfbfb;
+    border-radius: 0!important;
+    padding: 0 20px 0 10px!important;
+    margin: -3px 7px 0 0;
+    appearance: none;
+    vertical-align: middle;
+    outline: 0;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: content-box;
+}
+#icn{
+    vertical-align: middle;
+    display: inline-block;
+    height: 35px;
+    padding: 7px 21px;
+    font-size: 14px;
+    line-height: 21px;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    background: #0089d0;
+    white-space: nowrap;
+    text-decoration: none!important;
+    cursor: pointer;
+    transition: .01s;
+    margin-top: -3px;
+}
+#city{
+    color: #0089d0;
+    border-bottom: 1px dashed #0089d0;
+    cursor: pointer;
+}
+.cbox{
+    margin-left: 20px;
+}

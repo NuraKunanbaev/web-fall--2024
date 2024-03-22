@@ -1,0 +1,21 @@
+img {
+    width: 100px;
+}
+
+button {
+    margin-bottom: 7px;
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+}
+
+.whatsapp {
+    background-color: green;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
