@@ -37,4 +37,24 @@ def category_detail(request, category_id):
         return JsonResponse({'message': str(e)}, status=400)
 
     return JsonResponse(category.to_json())
-# Create your views here.
+
+def category_products(request, id):
+        try:
+            category = models.Category.objects.get(id = id)
+            products = models.Product.objects.filter(category = category) 
+        except models.Category.DoesNotExist as e:
+            return JsonResponse({'message': str(e)}, status=400)
+        
+        categories_json = [product.to_json() for product in products]
+        return JsonResponse(categories_json, safe=False)
+
+        
+        # return JsonResponse(category.to_json())
+
+# def categorydetail(request, id):
+#     try:
+#         category = category.objects.get(id=category)
+#         products = product.objects.filter(category_id=category_id)
+#         return render(request, 'category_detail.html', {'category': category, 'products': products})
+#     except Category.DoesNotExist:
+            # return JsonResponse({'message': str(e)}, status=400)
